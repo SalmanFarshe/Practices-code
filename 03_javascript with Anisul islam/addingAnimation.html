@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+
+		<!-- adding css -->
+		<style>
+			.wrapper {
+				position: absolute;
+				transform: translate(-50%, -50%);
+				top: 50%;
+				left: 50%;
+			}
+			#button1 {
+				background-color: black;
+				color: chartreuse;
+				border: none;
+				font-size: 25px;
+				padding: 15px;
+				margin: 20px;
+				border-radius: 10px;
+			}
+			#button1:hover {
+				background-color: blueviolet;
+				color: coral;
+				transition: 0.3s all ease;
+				border-radius: 15px;
+			}
+
+			.animated {
+				box-shadow: 0px 15px 30px 0px #6d6666;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			<button id="button1">Click me</button>
+		</div>
+
+		<script>
+            var onClicked1 = document.getElementById("button1");
+            
+            onclick = function(){
+                onClicked1.classList.toggle("animated")
+                setTimeout(function(){
+                    onClicked1.classList.remove("animated")
+                }, 2000)
+            }
+		</script>
+	</body>
+</html>

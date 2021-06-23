@@ -7,6 +7,14 @@
     <title>Document</title>
 </head>
 <body>
-    
+    <h1 id="demo"><b>I am demo</b></h1>
+
+    <script>
+        document.addEventListener("keypress", function(event){
+            var theKey = event.key;
+
+            document.getElementById("demo").innerHTML = "You Pressed " +theKey;
+        })
+    </script>
 </body>
 </html>

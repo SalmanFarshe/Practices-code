@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #main{
+            background-color:rgb(19, 141, 35);
+            border: none;
+            border-radius: 2px;
+            height: 30px;
+            width: 100px;
+            text-align: center;
+            position: absolute;
+            left: 45%;
+            top: 40%;
+            z-index: 1;
+            overflow: hidden;
+        }
+        #main>a{
+            text-decoration: none;
+            color:rgb(238, 255, 0);
+        }
+        #main:hover > a{
+            color:greenyellow;
+        }
+        #main:hover{
+            color: greenyellow;
+            background: none;
+            transition: 0.3s all ease;
+        }
+        #main::before{
+            content: "";
+            background-color: indigo;
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top: 0px;
+            left: -50%;
+            z-index: -1;
+        }
+        #main::after{
+            content: "";
+            background-color: indigo;
+            height: 100%;
+            width: 50%;
+            position: absolute;
+            top: 0px;
+            right: -50%;
+            z-index: -1;
+
+        }
+        #main:hover::before{
+            left: 0%;
+            transition: 0.3s all ease;
+        }
+        
+        #main:hover::after{
+            right: 0%;
+            transition: 0.3s all ease;
+        }
+    </style>
+</head>
+<body>
+    <button id="main">
+        <a href="http://facebook.com" target="_blank" rel="noopener noreferrer">Click Me</a>
+    </button>
+</body>
+</html>

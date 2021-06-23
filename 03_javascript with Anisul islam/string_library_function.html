@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="accordion-body r-"></div>
+    <script>
+        var name = "salmanFarshe"
+        var lenghth = name.length;
+        document.write(name + "<br>");
+        document.write(lenghth);
+        
+        var a = "ALLAH"
+        document.write("<br><br>number of the word allah is " + a.length);
+        document.write("<br><br>the 2nd word is = " + a.charAt(1))
+
+
+        var b = "muhammad"
+        document.write("<br><br>" + b.toUpperCase())
+
+        var c = "MUHAMMAD"
+        document.write("<br><br>" + c.toLowerCase())
+
+        // concatination function
+        var x = "muhammad sallallaho alyhowa sallam"
+        var y = " is the last prophet and the last messenger from allah sobhanwat'ala"
+        document.write("<br><br>" + x.concat(y))
+    
+        // slicing a string
+        var p = "salman"
+        document.write("<br><br>" + p.slice(0,3))
+    
+
+
+        // TASK NOMBER TWO
+        /*
+            get first name from user 
+            get last name from user 
+            add twice without library function  
+            print full name 
+            lenght of full name
+            convert full name into upper case
+            print the 2nd position of the full name
+        */
+            var firstName = prompt("Enter your first name :");
+            var lastName = prompt("Enter your last name :");
+            var fullName = firstName + " " + lastName;
+            document.write("<br><br>My Fullname is " + fullName);
+            document.write("<br><br>Fullname length is " + fullName.length)
+            document.write("<br><br>In uppercase fullname is " + fullName.toUpperCase())
+            document.write("<br><br>The 2nd charecter on my name is " + fullName.charAt(1))
+    </script>
+
+
+</body>
+</html>

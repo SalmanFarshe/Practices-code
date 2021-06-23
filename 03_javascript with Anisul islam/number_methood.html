@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = 5;
+        var b = "salman"
+        //typeof is used to know the data type off a variable
+        document.write ( typeof (a) ) ;
+        document.write ( '<br>' ) ;
+        document.write ( typeof ( "salman" ) ) ;
+        document.write ( '<br> <br>' ) ;
+
+        //convert number data type to string data type
+        var num = 5;
+        document.write ( '<br>' ) ;
+        document.write ( typeof ( num )) ;
+
+        num = toString ( num ) ;
+        document.write ( '<br>' ) ;
+        document.write ( typeof ( num )) ;
+        document.write ( '<br>' ) ;
+        document.write ( '<br>' ) ;
+
+        //convert string data type to number data type
+        var strng = "salman" ;
+        document.write ( '<br>' ) ;
+        document.write ( typeof ( strng ));
+        document.write ( '<br>' ) ;
+        strng = parseInt ( strng ) ;
+        document.write ( typeof ( strng ));
+
+        /**use of tofixed and to precision methood
+        this methood is used for knowing the value
+        after a decemel and float nomber...**/
+        
+        //toFixed is used for knowning after decemel number...
+        var number = 500.2589 ;
+        document.write ( "<br>", number ) ;
+        document.write ( "<br>", number.toFixed (1) );
+        document.write ( "<br>", number.toFixed (2) );
+        document.write ( "<br>", number.toFixed (3) );
+        document.write ( "<br>", number.toFixed (4) );
+        document.write ( "<br>", number.toFixed (5) );
+        document.write ( "<br><br>", number.toFixed (6) );
+        /**precision is used for the total amount of a nomber,
+         what i want to know...suppose i want to see totally 3 ammount 
+         for 7 it will show just 3 nomber foe 7...**/
+        document.write ( "<br>", number ) ;
+        document.write ( "<br>", number.toPrecision (3) );
+        document.write ( "<br>", number.toPrecision (4) );
+        document.write ( "<br>", number.toPrecision (5) );
+        document.write ( "<br>", number.toPrecision (6) );
+        document.write ( "<br>", number.toPrecision (7) );
+        document.write ( "<br>", number.toPrecision (8) );
+
+        /** 
+        now its time to use number function 
+        **/
+        document.write ( "<br><br>", Number ( "12" ) ) ;
+        document.write ( "<br><br>", typeof ( Number ( "12" ) ) ) ;
+        document.write ( "<br><br>", Number ( true ) ) ;
+        document.write ( "<br><br>", Number ( false ) ) ;
+</script>
+</body>
+</html>

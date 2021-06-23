@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+
+.dropdown {
+    position: relative;
+    
+}
+
+.b {
+    display: none;
+    position: absolute;
+    z-index:1;
+}
+
+.b a {display: block;
+}
+
+
+
+.dropdown:hover .b {
+    display: block;
+}
+
+</style>
+</head>
+<body>
+
+
+
+<div class="dropdown">
+  <button>Dropdown</button>
+  <div class="b">
+    <a href="#">Link 1</a>
+    <a href="#">Link 2</a>
+    <a href="#">Link 3</a>
+  </div>
+</div>
+
+
+</body>
+</html>

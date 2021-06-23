@@ -1,0 +1,112 @@
+			
+			
+			
+			<!DOCTYPE html>
+			<html>
+			<head>
+			<title>Menu bAr</title>
+			
+					<style type="text/css">
+					
+							#menu{/*list-style-type:none;*/
+								  width:960px;
+								  background-color:black;
+								  min-height:59px;
+								  padding:0;
+								  border-bottom:2px solid red;
+								  margin:0 auto;
+								  }
+								  
+							 #menu li:last-child{border-right:none;
+							 					}
+							 					
+							 #menu li:first-child{border-left:none;
+							 					 }
+							 					 
+							 #menu li{float:left;
+									  width:180px;
+									  list-style-type:none;
+							  		  border-right:2px solid red;
+							  	      /*border-left:4px solid red;*/
+							  		  position:relative;
+							 	     }
+							 		
+					         #menu li a{text-decoration:none;	          
+							           color:white;
+									   padding:20px;
+									   /*border-right:5px solid gray;*/
+									   background-color:black;
+									   display:block;
+									   /*border-top:4px solid red;*/
+									   transition:0.2s all ease;
+									   }
+									   
+							 #menu li a:hover{background-color:yellow;
+											 color:red;
+											}
+											
+							 #menu li ul li{border-right:none;
+							 				border-bottom:2px solid red;
+							 				width:180px;
+							 				position:relative;
+							 				}
+							 				
+						     #menu li ul{position:absolute;
+							 			left:-99999px;
+							 			padding:0px;
+							 			transition:0.1s all ease;
+							 	    	/**	height:400px;
+							 			width:2000px;
+							 			background-color:red;**/}
+							 			
+				  		 /** #menu li ul li{float:none;}**/
+							 				
+								#menu li ul li:last-child{border-bottom:none;
+														 }
+								
+								#menu li:hover ul{left:0px;
+												 }
+								
+								#menu li ul li ul{position:absolute;
+											     top:-999999px;
+											     padding:0;
+												}
+												
+								#menu li ul li:hover ul{top:0px;
+														left:230px;
+														}
+								
+								 
+												  
+												  
+									  
+												  
+					</style>
+			</head>
+			<body>
+					<ul id="menu">
+							<li><a href="my-first-web-site.html" >menu item 1</a></li>
+							<li><a href="#" >menu item 2</a></li>
+							<li><a href="#" >menu item 3</a>
+										<ul>
+										<li><a href="#" >dropdwon item 1</a></li>
+										<li><a href="#" >dropdwon item 2</a></li>
+										<li><a href="#" >dropdwon item 3</a>
+										 		<ul>
+										 		<li><a href="#" >dropdwon item 1.1</a></li>
+										 		<li><a href="#" >dropdwon item 2.1</a></li>
+										 		<li><a href="#" >dropdwon item 3.1</a></li>
+										 		<li><a href="#" >dropdwon item 4.1</a></li>
+										 		<li><a href="#" >dropdwon item 5.1</a></li>
+										 		</ul> 
+										</li>
+										<li><a href="#" >dropdwon item 4</a></li>
+										<li><a href="#" >dropdwon item 5</a></li>
+										</ul> 
+							</li>
+							<li><a href="#" >menu item 4</a></li>
+							<li><a href="#" >menu item 5</a></li>
+					
+					</ul>
+			</body>
+			</html>

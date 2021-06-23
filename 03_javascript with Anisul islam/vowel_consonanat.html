@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var usrInpt = prompt("Enter a leater :")
+        var usrInpt = usrInpt.toUpperCase();
+        if( usrInpt > 0 || usrInpt < 0  ){
+            document.write( usrInpt + " is not a Leater , its a NUMBER , please enter a leter." );
+        }
+        else if( usrInpt == "A" || usrInpt == "E" || usrInpt == "I" || usrInpt == "O" || usrInpt == "U" ){
+            document.write( usrInpt + " is Vowel" );
+        }
+        else{
+            document.write( usrInpt + " is consonanat");
+        }
+    </script>
+</body>
+</html>

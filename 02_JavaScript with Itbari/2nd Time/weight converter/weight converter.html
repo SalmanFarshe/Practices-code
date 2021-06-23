@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(67, 77, 77);
+        }
+        *{
+            margin: 0 auto;
+            padding: 0;
+        }
+        input{
+            font-size: 25px;
+            height: 50px;
+            padding-left: 5px;
+            background-color: rgb(67, 77, 77);
+            border: 5px solid #fff;
+            color: black;
+            margin-bottom: 15px;
+        }
+        #main_wrapper{
+            margin-top: 15%;
+            margin-left: 40%;
+        }
+        p{
+            font-size: 25px;
+            color: black;
+            font-weight: bold;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <div id="main_wrapper">
+    <input placeholder="Input your pound value" type="number" oninput="WeightConverter(this.value);" onchange="WeightConverter(this.value);">
+    <br>
+    <p style="display: inline;">
+        KG Value =
+    </p>
+    <p style="display: inline;" id="output">
+
+    </p>
+    </div>
+
+    <script>
+        function WeightConverter(inputvalue){
+            var converter = inputvalue;
+            document.getElementById("output").innerHTML = inputvalue/2.004
+        }
+        WeightConverter();
+    </script>
+</body>
+</html>

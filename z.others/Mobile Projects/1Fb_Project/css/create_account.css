@@ -1,0 +1,140 @@
+        *{margin:0;
+           padding:0;
+         }
+         
+        body a{color:#395797;}
+        
+        
+        a:hover {background:lime;
+                  color:red;}
+          
+ #nohover a:hover{background:none;}
+         
+         .header{background:#395797;
+                 overflow:hidden;
+         }
+         
+        .header2 {font-size:13px;
+                 padding:4px;}
+         
+    .header button a{text-decoration:none;
+                      color:#fff;}
+         
+         
+         
+         .header h3{float:left;
+                    padding:4px;
+                    color:#fff;}
+         
+         .header button{float:right;
+                        background:#34BB1C;
+                         color:white;
+                         padding:4px;
+                        border:1px solid blue;}
+         
+        .content_wrapper{background:#eeeeee;
+                        padding:8px;
+                       
+                        }
+                        
+      .content_wrapper
+   .main_content input {width:100%;
+                        height:30px;
+                        border:1px solid gray;
+                        
+                        margin-bottom:4px;  }
+                        
+         .main_content p{margin-top:10px;}
+                        
+          .main_content {margin:0px 10px;
+                         font-size:95%;}
+                        
+          .botom_text {text-align:center;
+                       font-size:12px;
+                       color:gray;}
+                       
+          .botom_text a{text-decoration:none;}
+                       
+                .radio_input {padding:6px;
+                               }
+                      
+                    .radio_text{font-size:12px;
+                               text-align:justify;
+                               margin-top:0px;
+                               margin-bottom:10px;
+                               color:gray;}
+                               
+ .main_content select{margin-top:5px;
+                       margin-left:15px;
+                       margin-bottom:20px;}
+                       
+                   .pass_text {margin-top:10px;
+                               font-size:12px;
+                               color:gray;
+                               text-align:justify;}
+                      
+                   .pass_text a{text-decoration:none;}
+                   
+                  .sinup_btn {padding:4px;
+                             padding-left:60px;
+                             padding-right:60px;
+                             margin-top:10px;
+                             border:none;
+                             background:#395797;
+                             margin-left:60px; }
+                             
+                   .sinup_btn a{text-decoration:none;
+                               color:#fff;
+                               font-size:12px;}
+                       
+                   #last_link {text-decoration:none;
+                              margin:10px;
+                              text-align:center; }  
+                        
+                    #last_link a{text-decoration:none;}
+                    
+                    #last_link a:hover {background:lime;}
+                    
+                 footer{background:#37474F;
+                        overflow:hidden;
+                        font-size:12px;
+                        }
+                        
+       .footer_left_part{float:left;
+                        width:50%;
+                        }
+                          
+  .footer_left_part ul li {list-style-type:none;
+                          }
+                        
+ .footer_left_part ul li a{text-decoration:none;
+                        color:#ddd;
+                        margin:6px;
+                        display:block; } 
+                        
+      .footer_right_part{float:right;
+                        width:50%;}
+                        
+.footer_right_part  ul li {list-style-type:none;
+                        }
+                        
+.footer_right_part ul li a{text-decoration:none;
+                        color:#ddd;
+                        margin:6px;
+                        display:block;} 
+                        
+                       .footer_left_part a:hover,
+                      .footer_right_part a:hover{color:red;}
+                       
+              .footer_p {color:#fff;
+                        font-weight:bold;
+                        padding:5px;
+                        margin-top:70px;}
+                        
+            .plus_brdr {border:1px solid gray;
+                        height:22px;
+                        width:25px;
+                        text-align:center;
+                        font-weight:bold;
+                        font-size:15px;
+                        padding-top:4px;}

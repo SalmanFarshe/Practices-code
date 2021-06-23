@@ -1,0 +1,277 @@
+*{color:rgb(0, 0, 0);
+ }
+
+ h2,h1,h3,
+ h5,h6,h4 {color:red;}
+
+ .yellow{color:yellow;}
+
+ #blue{color:rgb(81, 255, 0);
+      font-weight: bold;}
+
+.bold{font-weight: bold;
+color: black;}
+
+.yellow{text-decoration:underline;}
+
+.overline{text-decoration:overline;}
+
+.linethrow{text-decoration: line-through;}
+
+.font{font-style: oblique;
+     font-size: 40px;
+    text-transform: uppercase;}
+
+.linethrow  {line-height: 80px;}
+
+#salman{background-image: url("img/salman.jpg");
+       }
+
+table{background: rgb(0, 0, 0);
+      border-style:none ;
+      border:1px solid hotpink;
+      border-width:30px;
+      margin: 0 auto;
+     }
+
+td,th{  padding:100px;
+        color:rgb(124, 240, 95);
+    }
+
+caption{color:rgb(255, 2, 2);
+        margin:0px;
+        background-color:rgb(13, 227, 255);
+      }
+
+.div1{
+     background-color: brown;
+     padding: 100px;
+    }
+
+
+.div2{
+      background-color: chartreuse;
+      padding: 200px;
+     }
+
+.overflw{border:1px solid red;
+        width:200px;
+        height:200px;
+        overflow:scroll;}
+
+.dsply{display: inline;
+     }
+
+.block1{
+background-color: cadetblue;
+height: 200px;
+width: 200px;
+margin-bottom: 20px;
+float: left;
+}
+
+.block2{
+    background-color: crimson;
+    height: 200px;
+   
+    width: 200px;
+    float: left;
+    -webkit-transition:all 4s;
+    -moz-transition:all 4s;
+    -ms-transition:all 4s;
+    -o-transition:all 4s;
+     transition:all 4s;
+    }
+    
+    .block2:hover{
+        background-color: rgba(17, 0, 255, 0.863);
+        height: 300px;
+        width: 300px;
+        float: left;
+        -webkit-transform: scale(9);
+        -moz-transform: scale(9);
+        -ms-transform: scale(9);
+        -o-transform: scale(9);
+        transform: scale(2);
+       }
+
+       
+       .new{background:url('img/salman.jpg') no-repeat;
+            overflow: hidden; display:inline-block;} 
+.mybtn {  
+          width: 150px;
+          height: 45px;
+          border-radius: 15px;
+          font-size: 20px;
+          padding: 5px;
+          color: #000;
+          transition: all 1s ;
+}
+
+ .mybtn:hover{background-color: green;
+              cursor: pointer;
+              color:red;
+}
+
+.clear{
+border: 1px solid red;
+clear:left;
+margin-top: 2px;
+}
+
+.clearproperty img{
+                  float: left;
+}
+
+.gradnt{
+      background-color: blue;  
+      height: 800px;
+      width: 1000px;
+      background:linear-gradient(to left,rgb(0, 0, 0),rgb(20, 177, 6));
+
+}
+
+
+.gradnt1{
+     margin-top: 20px;
+     background: radial-gradient(red 50%,blue 50%);
+     height: 800px;
+     border-radius: 100%;
+     width: 1000px;
+}
+
+
+
+
+.onlinegradent{
+     margin-top: 30px;
+     height: 800px;
+     width: 3000px;
+background: rgb(250,10,172);
+background: linear-gradient(90deg, rgba(250,10,172,1) 4%, rgba(58,10,250,1) 8%, rgba(10,250,42,1) 12%, rgba(250,243,10,1) 19%, rgba(250,243,10,1) 22%, rgba(215,176,120,1) 26%, rgba(120,215,201,1) 32%, rgba(215,120,146,1) 42%, rgba(171,120,215,1) 50%, rgba(120,215,144,1) 58%, rgba(22,18,96,1) 66%, rgba(33,22,223,1) 71%, rgba(6,5,78,1) 78%, rgba(7,6,89,1) 83%, rgba(8,7,100,1) 88%, rgba(19,19,224,1) 92%, rgba(0,212,255,1) 97%);
+}
+
+
+
+.animation{margin-top: 50px;
+           width: 600px;
+           height: 600px;
+           animation-name: salman;
+           background-color: blueviolet;
+           animation-duration: 2s;
+           animation-iteration-count:infinite;
+           animation-delay: 2s;
+           
+}
+
+@keyframes salman{
+     from{background-color:blueviolet}
+     to{background-color:rgb(0, 0, 0);
+        border-radius: 60%;}
+}
+
+.animation1{
+          margin-top: 50px;
+           width: 600px;
+           height: 600px;
+           animation-name: salmann;
+           background-color: blueviolet;
+           animation-duration: 2s;
+           animation-iteration-count:infinite;
+           animation-delay: 2s;
+
+}
+
+@keyframes salmann{
+        0%{background-color: blueviolet;}
+        10%{background-color:rgb(255, 2, 2);border-radius: 50%;}
+        20%{background-color:tomato }
+        60%{background-color:rgb(0, 0, 0); border-radius: 50%;}
+        70%{background-color:yellow }
+        80%{background-color: green;border-radius: 50%;}
+        90%{background-color:lawngreen }
+        100%{background-color: blueviolet;border-radius: 50%;}
+}
+
+.animation2{
+     position: relative;
+     margin-top: 50px;
+     width: 600px;
+     height: 600px;
+     animation-name: salmannn;
+     background-color: blueviolet;
+     animation-duration: 2s;
+     animation-iteration-count:infinite;
+     animation-delay: 2s;
+     animation-direction: alternate;
+}
+
+@keyframes salmannn{
+     from{left:0}
+     to{left:3000px}
+     0%{background-color: blueviolet;}
+     10%{background-color:rgb(255, 2, 2);border-radius: 50%;}
+     20%{background-color:tomato }
+     60%{background-color:rgb(0, 0, 0); border-radius: 50%;}
+     70%{background-color:yellow }
+     80%{background-color: green;border-radius: 50%;}
+     90%{background-color:lawngreen }
+     100%{background-color: blueviolet;border-radius: 50%;}
+}
+
+
+
+.animation3{
+     position: relative;
+     margin-top: 50px;
+     width: 600px;
+     height: 600px;
+     animation-name: salmannnn;
+     background-color: rgb(112, 45, 179);
+     animation-duration: 2s;
+     animation-iteration-count:infinite;
+     animation-delay: 2s;
+     animation-direction: normal;
+}
+
+@keyframes salmannnn{
+     0%{left:0;}
+     25%{left:1000px;top:0;}
+     50%{left:1000px;top:1000px;}
+     75%{left:0;top:1000px;}
+     100%{left:0; top:0;}
+
+     0%{background-color: blueviolet;}
+     10%{background-color:rgb(255, 2, 2);border-radius: 50%;}
+     20%{background-color:tomato }
+     60%{background-color:rgb(0, 0, 0); border-radius: 50%;}
+     70%{background-color:yellow }
+     80%{background-color: green;border-radius: 50%;}
+     90%{background-color:lawngreen }
+     100%{background-color: blueviolet;border-radius: 50%;}
+} 
+
+
+audio{
+     background-color: black;
+     border: 1px solid red ;
+     border-radius: 5px;
+     width: 1000px;
+}
+
+video{
+     border:5px solid red ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

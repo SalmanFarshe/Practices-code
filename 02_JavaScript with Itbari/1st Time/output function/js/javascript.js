@@ -1,0 +1,14 @@
+        alert('hellow world');
+        alert('how are you world');
+        alert('1');
+        alert('2');
+        alert('3');
+        alert('4');
+        alert('5');
+        alert('6');
+        alert('7');
+        alert('8');
+        alert('9');
+        alert('0');
+        alert('ok good bye');
+        alert('take care your self');

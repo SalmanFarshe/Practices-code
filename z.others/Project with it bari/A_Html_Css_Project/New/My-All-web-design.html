@@ -1,0 +1,453 @@
+
+
+		<!DOCTYPE html>
+		<html>
+		<head>
+	    	<title>
+     			Our Ahsan Manzil 		
+     		</title>
+     		
+     		<style type="text/css">
+     		    *{margin:0;
+     		      padding:0;}
+     		      
+     		    body {padding-left:5px;}
+     		      
+     		   #main_header{background:url("img/ahsan-manzil-full-view.jpg") 
+     		                           no-repeat;
+     		        		background-size:cover;
+     		        		width:1000px;
+     		        		height:400px;
+     		        		}
+     		   
+     		   .menu {width:1000px;
+     		          height:45px;
+     		          background:black;
+     		          display:block;}
+     		   
+     		  .menu li{float:left;
+     		           height:45px;
+     		          list-style-type:none;
+     		          border-left:2px solid gray;}
+     		          
+     		   .menu li:first-child{border-left:none;}
+     		  
+     		  .menu li a{text-decoration:none;
+     		             padding:12px 20px;
+     		             
+     		             color:#fff;
+     		             display:block;}
+     		  .menu li a:hover {border-bottom:2px solid #ffffff;}
+     		  
+     		  .menu2{margin-top:272px;
+     		         background:url("img/menu_bg.png")
+     		         }
+     		        
+     		   .main_menu input {float:right;
+     		                     height:30px;
+     		                     border:none;
+     		                     display:block;
+     		                     margin-right:px;}
+     		    
+     		   .menu2 img {float:;
+     		              height:28px;
+     		              width:25px;
+     		              background:#fff;
+     		              border:1px solid #dedede;}
+     		              
+     		    #srchbox {height:30px;
+     		              float:right; 
+     		              margin-top:7px;}
+     		             
+     		    #srchbox input {float:left;
+     		                   display:block;}
+     		    
+     		    #maincontent {width:1000px;
+     		                  height:2600px;}
+     		    
+     		   .leftcontent,.rightcontent {background :#99f999;
+     		                 margin-bottom:px;
+     		                 width:200px;
+     		                 float:left;}
+     		   
+     		  .rightcontent {float:right;}
+     		    
+     		   .leftcontent h2,.rightcontent h2{color:#fff;
+     		                   background:green;
+     		                   padding:5px;
+     		                   display:block;
+     		                   margin-bottom:10px;
+     		                   }
+     		   .leftcontent ul,.rightcontent ul {list-style-type:none;
+     		                    line-height:20px;  }
+     		   
+     		  .leftcontent ul li a,.rightcontent ul li a{text-decoration:none;
+     		    									  display:block;	}
+     		  
+     		 .leftcontent ul li a:hover,.rightcontent ul li a:hover {text-decoration:underline;}
+     		    
+     		 .middlecontent{width:600px;
+     		               float:left;
+     		               height:592px;
+     		               background:#ffddff;}  
+     		  
+     		 .middlecontent p{border-bottom:2px solid gray;
+     		                 margin-top:15px;
+     		                 margin-bottom:25px;}
+     		                 
+     		  #inpt input  {background:black;
+     		               border:none;
+     		               color:red;
+     		               margin-left:5px;
+     		               margin-bottom:12px;}
+     		                 
+     		 .middlecontent h2{background:#dfdfdf;
+     		                   padding:5px;}
+     		  
+     		 .content2 {width:1000px;
+     		            height:750px;
+     		            background:#312F30;}
+     		            
+     		.leftcontent2 {width:300px;
+     		               height:;
+     		              float:left;
+     		              background:#312F30;}
+     		
+     		.middlecontent2 {width:300px;
+     		                 float:left;
+     		                 margin:0px 20px;  }
+     		 
+     		 .rightcontent2 {width:300px;   
+     		                 float:left;
+     		              }
+     		  
+     		.leftcontent2 ul,
+     		.rightcontent2 ul,
+     		.middlecontent2 ul{padding:5px; }
+     		 
+     		.leftcontent2 ul li,
+     		.middlecontent2 ul li,
+     		.rightcontent2 ul li{list-style-type :none;
+     					    	 }							
+     		
+     		.leftcontent2 ul li a,
+     		.middlecontent2 ul li a,
+     		.rightcontent2 ul li a{display:block;
+     		                       color:#fff;
+     		                       font-size:18px;
+     		                       text-decoration:none;}
+     		 
+     		 .leftcontent2 ul li a:hover,
+     		 .middlecontent2 ul li a:hover,
+     		 .rightcontent2 ul li a:hover {color:orange;}
+     		 
+     		 
+     		 
+     		.leftcontent2 h2, 
+     		.middlecontent2 h2,
+     		.rightcontent2 h2{color:#dedede;
+     		                  border-bottom:2px solid #fff;
+     		                  margin-top:10px;}
+     		                  
+     		    
+     		 #sharebutton {margin-top:8px;
+     		               margin-right:8px;}
+     		 
+     		 #sharebutton ul{list-style-type:none;
+     		 border:0.99px solid gray;
+     		 border-radius:2px;
+     		 height:48px;
+     		 width:250px;
+     		 margin:0px;
+     		 padding:0px;}
+     		 
+     		 #sharebutton ul li{float:left;
+     		 margin-left:10px;}
+     		 
+     		 #sharebutton ul li a{display:block;}
+     		 
+     		 #sharebutton ul li a img{height:40px;
+     		 width:40px;
+     		 padding:5px;}
+     		 
+     		 
+     		 
+     		 
+     		 footer {background:orange;
+     		         padding:6px;
+     		         text-align:center;
+     		         transition:1s all ease;}
+     		         
+     		 footer:hover {background:black;
+     		              color:orange;
+     		              }
+     		
+     		 #menu li ul{
+     		             background:black;
+     		             position:absolute;
+     		             left:-99999px;}
+     		             
+     		 #menu li {position:relative;}
+     		 
+     		 #menu li:hover ul{left:0;}
+     		 
+     		 #menu li ul li{list-style-type:none;
+     		               float:none;
+     		               border-left:none;
+     		               border-bottom:2px solid gray;  }
+     		 #menu li ul li:last-child {border:none;}
+     		 
+     		 #menu li ul li:first-child {border-top:2px solid gray;}
+     		                             
+     		 
+     		 
+     		</style>
+     		
+		</head>
+		
+		<body>
+				<header id="main_header">
+				    <div class="main_menu">
+				       <ul class="menu" id="menu" > 
+				          <li><a href="#">Home</a></li>
+				          <li><a href="#">Profile</a></li>
+				          <li><a href="#">Subhom</a>
+				            <ul>  
+				              <li><a href="#">Home</a></li>
+				              <li><a href="#">Profile</a></li>
+				              <li><a href="#">Subhom</a></li>
+				              <li><a href="#">Backto</a></li>
+				             </ul>
+				          </li>
+				          <li><a href="#">Backto</a></li>
+				      </ul>
+				    </div>
+				    <br>
+				    <br>
+				    <div class="main_menu">
+				       <ul class="menu menu2"  >
+				          <li><a href="#">Home</a></li>
+				          <li><a href="#">Profile</a></li>
+				          <li><a href="#">Subhom</a></li>
+				          <li><a href="#">Backto</a></li>
+				          
+				          <div id="srchbox">
+				            <input type="search"> 
+				            <img src="img/srchIcon.png"> 
+				          </div>
+				          
+				        </ul>
+				       
+				    </div>
+				</header>
+				    
+				<div id="maincontent">    
+				  <div class="leftcontent">
+				    <div class="content" >
+				    <h2>
+				    A heading Here
+				    </h2>
+				    
+				    <ul>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    </ul>
+				    </div>
+				    
+				     
+				    <div class="content" >
+				    <h2>
+				    A heading Here
+				    </h2>
+				    
+				    <ul>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    </ul>
+				    </div>
+				    
+				    <div class="content" >
+				    <h2>
+				    A heading Here
+				    </h2>
+				    
+				    <ul>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    </ul>
+				    </div>
+				    
+				    <div class="content" >
+				    <h2>
+				    A heading Here
+				    </h2>
+				    
+				    <ul>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    <li><a href="#" >A Topics Here</a></li>
+				    </ul>
+				    </div>
+				    
+				    
+				 
+			    </div>
+			    
+			    <div class="middlecontent">
+			       <h2>this is the heading two </h2>
+			         
+			      <p>
+			          Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorpm veniam, q
+			          uis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea co
+			          mmodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+			      </p>
+			      
+			      <h2>this is the heading two </h2>
+			      <p> 
+			      Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lo
+			      bortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+			      hendrerit in vulputate velit Ut wisi enim ad minimvulputate velit Ut wisi enim ad
+			      minimvulputate velit Ut wisi enim ad minim veniam, quis nostrud exerci tation ull
+			      </p>
+			      			      
+			      <p>
+			      amcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel 
+			      eum iriure dolor in hendrerit in vulputate velit
+			      </p>
+			      
+			      
+			      <h2>this is the heading two </h2>
+			      <p> wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobort
+			      is nisl uendrerit in vulputate velit
+			      </p>
+			      
+			      
+			    </div>
+			    
+			    
+     	    <div class="rightcontent">
+			    <div class="content" >
+			    <h2>
+			    A heading Here
+			    </h2>
+			    
+			    <ul>
+			    <li><a href="#" >A Topics Here</a></li>
+			    <li><a href="#" >A Topics Here</a></li>
+			    <li><a href="#" >A Topics Here</a></li>
+			    <li><a href="#" >A Topics Here</a></li>
+			    <li><a href="#" >A Topics Here</a></li>
+			    </ul>
+			    </div>
+			    
+			    <div class="content" >
+			    <h2>
+			    A heading Here
+			    </h2>
+			     <div id="inpt">
+			     Your mail:<input type="email">
+			     Your pass:<input type="password" >   
+			     </div>
+			    </div>
+			    
+			    <div class="content" >
+			    <h2>
+			    A heading Here
+			    </h2>
+			    
+			    <ul>
+			    <li><a href="#" >A Topics Here</a></li>
+			    <li><a href="#" >A Topics Here</a></li>
+			    <li><a href="#" >A Topics Here</a></li>
+			    <li><a href="#" >A Topics Here</a></li>
+			    <li><a href="#" >A Topics Here</a></li>
+			    </ul>
+			    </div>
+			    
+			    <div class="content" >
+			    <h2>
+			    A heading Here
+			    </h2>
+			    
+			    <ul>
+			    <li><a href="#" >A Topics Here</a></li>
+			    <li><a href="#" >A Topics Here</a></li>
+			    <li><a href="#" >A Topics Here</a></li>
+			    <li><a href="#" >A Topics Here</a></li>
+			    <li><a href="#" >A Topics Here</a></li>
+			    </ul>
+			    </div>
+			    
+		   </div>
+		  
+		   <div class="content2"> 
+               
+               <div class="leftcontent2">
+                  <h2>
+                    First Category 
+                  </h2>
+                  <ul>
+                  <li><a href="#" >A Topics Here</a></li>
+                  <li><a href="#" >A Topics Here</a></li>
+                  <li><a href="#" >A Topics Here</a></li>
+                  <li><a href="#" >A Topics Here</a></li>
+                  <li><a href="#" >A Topics Here</a></li>
+                  </ul>
+                  
+                </div>
+                
+                <div class="middlecontent2">
+                    <h2>
+                      Our Control PART 
+                    </h2>
+                   <ul>
+                   <li><a href="#" >A Topic journalists  Here</a></li>
+                   <li><a href="#" >A Topicsa home tow  Here</a></li>
+                   <li><a href="#" >A Topicsh hba kki Here</a></li>
+                   <li><a href="#" >A Topics gola ki use  Here</a></li>
+                   <li><a href="#" >A Topics years and follower Here</a></li>
+                   </ul>
+                   
+                 </div>
+                 
+                 <div class="rightcontent2">
+                     <h2>Shere Us:</h2>
+                    <ul>
+                    <li><a href="#" >A Topics Here</a></li>
+                    <li><a href="#" >A Topics Here</a></li>
+                    </ul>
+                    
+                    <div id="sharebutton" >
+                    <ul>
+                    <li><a href="#" ><img src="img/fb.png"> </a></li>
+                    <li><a href="#" ><img src="img/gplus.png"> </a></li>
+                    <li><a href="#" ><img src="img/tw.png"> </a></li>
+                    <li><a href="#" ><img src="img/ldin.png"> </a></li>
+                    </ul>
+                    </div>
+                    
+                  </div>
+               
+           </div>		  
+		    
+		    <footer>
+		    
+		    <p>&copy;Copyright by[-salman farshe-]
+		    
+		    </footer>
+		  </div>
+				
+		</body>
+		
+		</html>

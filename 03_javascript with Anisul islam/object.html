@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<script>
+			// var student = {
+			// 	name: "salman",
+			// 	age: 20,
+			// 	color: "black",
+			// 	food: "water",
+			// 	fruit: "graps",
+			// };
+			// document.write(student.name + "<br>");
+			// document.write(student.age + "<br>");
+			// document.write(student.color + "<br>");
+			// document.write(student.food + "<br>");
+			// document.write(student.fruit + "<br>");
+
+			// advanced object methood...
+			// by adding constractor...
+			// constractor is one kind of function..
+			// lets make a constractor..
+			// constractor helps us to make multiple object at a time..
+			function Emply_Demo_Constractor(name, age, color, food, fruit) {
+				this.N = name;
+				this.A = age;
+				this.C = color;
+				this.FO = food;
+				this.FR = fruit;
+
+				this.emplyDetailsOutput = function () {
+					document.write(this.N + "<br>");
+					document.write(this.A + "<br>");
+					document.write(this.C + "<br>");
+					document.write(this.FO + "<br>");
+					document.write(this.FR + "<br>" + "<br>");
+				};
+			}
+
+			var employ1 = new Emply_Demo_Constractor(
+				"salmanfarshe",
+				20,
+				"green",
+				"meet",
+				"graps"
+			);
+
+			var employ2 = new Emply_Demo_Constractor(
+				"NurjahanIslam",
+				18,
+				"white",
+				"ilsha",
+				"goava"
+			);
+			var employ3 = new Emply_Demo_Constractor(
+				"osenat farshe",
+				02,
+				"pink",
+				"malta",
+				"pynaple"
+			);
+
+			employ1.emplyDetailsOutput();
+			employ2.emplyDetailsOutput();
+			employ3.emplyDetailsOutput();
+
+		</script>
+	</body>
+</html>

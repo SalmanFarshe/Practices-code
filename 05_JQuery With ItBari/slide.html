@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.div_for_click,
+			.slider_div {
+				background-color: yellow;
+				color: black;
+				font-size: 25px;
+				font-weight: bold;
+				font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+				text-align: center;
+				width:96%;
+				border: 1px solid black;
+				border-radius: 2px;
+			}
+            .div_for_click{
+                height: 25px;
+                padding: 25px;
+            }
+			.slider_div {
+                height: 100px;
+                padding: 25px;
+				margin-top: 0.5px;
+                display: none;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="div_for_click">Click Me to slidding</div>
+		<div class="slider_div">
+			this is the div .... which will slide by clicking click me for slidding
+			portion.. and hey gyes this is salman who is a web designer and simple
+			fontend ddevloper... lets enjoy it...
+		</div>
+		<script src="jquery.js"></script>
+		<script>
+			$(document).ready(function () {
+                $(".div_for_click").click(function(){
+                    $(".slider_div").slideToggle("slow")
+                })
+            });
+		</script>
+	</body>
+</html>

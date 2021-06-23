@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var myArray = ["salman" , "farshe" , "zihad" , "tareque" , "sabbir"]
+        document.write(myArray + "<br>");
+        
+        // push will add an item in array on the last index
+        myArray.push("farid");
+        myArray.push("ferdous");
+        myArray.push("shakil");
+        document.write(myArray + "<br>");
+
+        // pop will remove an item in array on the last index
+        myArray.pop();
+        myArray.pop();
+        document.write(myArray + "<br>");
+
+        // unshift will add an item in array on the 1st index
+        myArray.unshift("hellow");
+        myArray.unshift("gyes");
+        document.write(myArray + "<br>");
+
+        // shift will remove an item in array on the 1st index
+        myArray.shift();
+        myArray.shift();
+        myArray.shift();
+        document.write(myArray + "<br>");
+
+
+        // splice have 4 peramiter...
+        // it helps to add and remove index on array..
+        // removing function will work from the index where we start to adding value....like here 2 nomber index
+        myArray.splice(2 , 3 , "karim" , "rahim");
+        document.write(myArray + "<br>");
+        // splice will also remove index like that..
+        myArray.splice(1,2); //this methood will remove the 1st index value and the 2nd index value..
+        document.write(myArray + "<br>");
+
+        myArray.push("salman" , "farshe" , "zihad");
+        document.write(myArray + "<br>");
+
+        // slice method helps to make a new array...
+        // the new array will be without the index whice are sliced by slice method
+        // we have to make a new name for the new array created by slice mthd...like that...
+        var newArray = myArray.slice(1,2) /**it will cut the index from 1 to 2 and make a new array named newArray without
+                                              the cuttion value with the due value...**/
+        // have to remember that slice never change the index of the old array...
+        
+        
+        // sort mthd will sort all index 
+        var sortedArray = myArray.sort();
+        document.write(sortedArray + "<br>");
+        // if we want to sort it reversely we can do that..
+        sortedArray.reverse();
+        document.write(sortedArray + "<br>");
+        // we can also do like that
+        var x = ["abklaj" , "psgasg" , " lsgsdvs" , " cgsgsagv" , " xhdahbfnbfxg" , " dgags" ]
+        x.sort() // like that.....
+        document.write(x + "<br>");
+
+        // how to sort number value...
+        numberValue = [5 , 46 , 8 , 746 , 5 , 1435 , 49 , 68 , 4132 , 468 , 4 , 3654698 , 7451379846531]
+        numberValue.sort(); // it will not work...
+        // we have to do like that...
+        numberValue.sort(function(a, b){
+            return a-b;
+        }); //its a mathmetical turm... to sort it... we have to use this type of function... 
+            // its works like finding negative and posetive number,,,,
+            // if the sum value is posetive , then b will indexed 1st...
+            // if the value are negative , then a will be indexed 1st...
+        document.write(numberValue + "<br>");
+        //we can sort reversely like that..
+        numberValue.sort(function(a, b){
+            return b-a;
+        })
+        document.write(numberValue + "<br>");
+    
+    </script>
+</body>
+</html>

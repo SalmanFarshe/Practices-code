@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<h1 class="heading_1">Hei this is a j query preoject</h1>
+		<p class="display-1">this is for single action</p>
+		<script>
+			// basic syntax is $(selector).action();
+			// like syntax is $(#header_1).hide();
+			// but you have to ready your document....
+			// sothe fynal syntax is...
+			/**
+			 $(documeent).ready(function(){
+				$(#header_1).hide();
+			 });
+			 
+			 **/
+		</script>
+		<script src="jquery.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".display-1").hide();
+			});
+			// for double action....
+			$(document).ready(function () {
+				$("h1").click(function () {
+					$(this).hide();
+				});
+			});
+		</script>
+	</body>
+</html>

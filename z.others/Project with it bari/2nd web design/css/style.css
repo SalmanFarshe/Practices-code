@@ -1,0 +1,300 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.bg-img{
+    background: url(../img/ahsan-manzil-full-view.jpg)
+    no-repeat;
+    background-size: 960px 258px;
+    background-position-y: 42px;
+    height:300px;
+    margin: 0 auto;
+    width: 960px;
+}
+
+header .menu-1 ul{
+    list-style-type: none;
+    margin-top: 50px;
+    background-color:#000000;
+    height: 41.5px;
+    margin: 0px auto;
+    width: 960px;
+}
+
+header .menu-1 ul li{
+    float: left;
+    position: relative;
+}
+
+header .menu-1 ul li a{
+    background-color:#000000;
+    text-decoration: none;
+    color: rgb(199, 188, 188);
+    padding: 10px 15px;
+    display: block;
+}
+
+header .menu-1 ul li a:hover{
+    color: white;
+    border-bottom: 3px solid white;
+    transition: 0.2s all ease;
+}
+
+
+header .menu-1 ul li ul{
+    width: 150px;
+    margin: 0;
+    padding: 0;
+    left: -99999px;
+    position: absolute;
+}
+
+header .menu-1 ul li:hover ul{
+    left: 0px;
+}
+
+
+header .menu-1 ul li ul li{
+    float: none;
+    position: relative;
+}
+
+header .menu-1 ul li ul li ul{
+    position: absolute;
+    top:-9999px;
+    z-index: 99999;
+}
+
+
+header .menu-1 ul li ul li:hover ul{
+    top: 0px;
+    left: 150px;
+}
+
+#menu-2 {
+    opacity: 0.7;
+    background-color: none;
+}
+
+#menu-2 ul{
+    margin-top: 217px;
+}
+
+#menu-2 ul li a:hover{
+    border-bottom:none;
+    border-top:3px solid green;
+}
+
+#search_bar input{
+    border: none;
+    width: 304px;
+    height: 30px;
+    margin-top: 6px;
+    margin-left: 250px;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+    padding: 5px;
+    padding-right: 8px;
+}
+
+.icon{
+    left: 1125px ;
+    top: 270px;
+    position: absolute;
+}
+
+.src_btn{
+    border: none;
+    height: 20px;
+    width: 25px;
+    background-color: white;
+}
+
+.main_content{
+    width: 960px;
+    margin: 0 auto;
+}
+
+.main_content ul{
+    list-style-type: none;
+}
+
+.main_content .left_content{
+    float: left;
+    background-color: #D6DAAD;
+    width: 210px;
+
+}
+
+.main_content .left_content .same_eliment{
+    
+}
+
+.main_content .middle_content{
+    float: left;
+    background-color: #F7EBEB;
+    width: 540px;
+    font-size: 18px;
+}
+
+.main_content .middle_content .content{
+
+}
+
+.main_content .middle_content .content h2{
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #DDDDDD;
+}
+
+.main_content .middle_content .content p{
+    padding:10px;
+    line-height: 125%;
+}
+
+.main_content .right_content{
+    float: right;
+    background-color: #D6DAAD;
+    width: 210px;
+
+}
+
+.main_content .right_content .same_eliment{
+    
+}
+
+.middle_content blockquote{
+    background-color: #DDDDDD;
+    margin-left: 40px;
+    padding: 5px;
+    height: 145px;
+    border-left: 5px solid rgb(255, 0, 0);
+    margin: 20px;
+}
+
+.middle_content blockquote img{
+    height: 60px;
+    width: 40px;
+    display: block;
+    float: left;
+}
+
+.middle_content blockquote p{
+    width: 400px;
+    margin-left: 32px;
+    font-weight: bold;
+    font-size: 15px;
+    text-align: justify;
+}
+
+.same_eliment h2{
+    background-color: #008000;
+    padding: 10px;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.same_eliment ul{
+    padding: 10px;
+}
+
+.same_eliment ul a{
+    text-decoration: none;
+    padding: 5px;
+    color: gray;
+}
+
+.footer{
+    margin: 0 auto;
+    width: 960px;
+    background-color: #312F30;
+    overflow: hidden;
+}
+
+.footer h2{
+    padding: 10px;
+}
+
+.footer ul{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.footer ul li{
+    padding: 3px;
+}
+
+
+.footer ul a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.footer ul a:hover{
+    color: #fff;
+    color: orange;
+    transition: .2s all ease;
+}
+
+
+.footer_left{
+    float: left;
+    width: 310px;
+    margin-right: 15px;
+    margin-left: 5px;
+}
+
+.footer_middle{
+    float: left;
+    width: 310px;
+    margin-right: 15px;
+
+}
+
+.footer_right{
+    float: right;
+    width: 290px;
+    margin-right: 10px;
+
+}
+
+.footer_left h2{
+    color: #fff;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.footer_middle h2{
+    color: #fff;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+.footer_right h2{
+    color: #fff;
+    border-bottom: 3px solid rgb(255, 255, 255);
+}
+
+
+footer{
+    background-color: orange;
+    text-align: center;
+    margin: 0 auto;
+    width: 940px;
+    padding: 10px;
+}
+
+footer:hover{
+    background-color: black;
+    color: orange;
+    transition: .5s all ease;
+}
+
+
+

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.animated_div {
+				background-color: black;
+				height: 50px;
+				width: 50px;
+				position: absolute;
+			}
+		</style>
+	</head>
+	<body>
+		<button class="for_animation">click me to animate</button>
+		<br /><br />
+		<button class="stop_button">click for stop</button>
+		<br />
+		<br />
+		<div class="animated_div"></div>
+		<script src="jquery.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".for_animation").click(function () {
+					$(".animated_div").animate(
+						{
+							height: "200px",
+							width: "150px",
+						},
+						3000
+					); // this timing is the property of animation function...
+					$(".animated_div").animate(
+						{
+							top: "100px",
+							left: "200px",
+						},
+						3000
+					);
+					$(".animated_div").animate(
+						{
+							top: "220px",
+							left: "200px",
+						},
+						3000
+					);
+					$(".animated_div").animate(
+						{
+							top: "300px",
+							left: "300px",
+						},
+						3000
+					);
+					$(".animated_div").animate(
+						{
+							top: "400px",
+							left: "400px",
+						},
+						3000
+					);
+				});
+			});
+			$(document).ready(function () {
+				$(".stop_button").click(function () {
+					$(".animated_div").stop(true); // without true peramiter .stop will stop the current animation or process and with true the .stop will stop or pause the whole process....
+				});
+			});
+		</script>
+	</body>
+</html>

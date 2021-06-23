@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			.paragraph {
+				color: yellow;
+                background-color: black;
+				text-transform: uppercase;
+				font-size: 25px;
+				font-weight: bold;
+				text-align: center;
+			}
+			.hide,
+			.show {
+				background-color: yellow;
+				border: 5px solid black;
+				color: black;
+				padding: 10px 30px;
+                text-transform: uppercase;
+                text-align: center;
+                font-weight: bold;
+                position: fixed;
+                top: 100px;
+			}
+            .hide{
+                right: 0.5%;
+                top: 100px;
+            }
+		</style>
+	</head>
+	<body>
+		<p class="paragraph">this is the hiding and showing paragraph</p>
+		<button class="hide">hide</button>
+		<button class="show">show</button>
+		<script src="jquery.js"></script>
+		<script>
+			$(document).ready(function () {
+				$(".hide").click(function () {
+					$(".paragraph").hide();
+				});
+				$(".show").click(function () {
+					$(".paragraph").show();
+				});
+			});
+		</script>
+	</body>
+</html>

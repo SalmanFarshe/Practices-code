@@ -1,0 +1,35 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.footer_right_part_div_2_shere_button{
+    margin-top: 5px;
+}
+
+.footer_right_part_div_2_shere_button ul{
+    list-style-type: none;
+}
+
+.footer_right_part_div_2_shere_button ul li{
+    float: left;
+}
+
+.footer_right_part_div_2_shere_buttonul li a{
+    display: block;
+}
+
+.footer_right_part_div_2_shere_button ul li a img{
+    height: 40px;
+    width: 40px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    margin-right: 8px;
+    opacity: 0.5;
+}
+
+.footer_right_part_div_2_shere_button ul li a img:hover{
+    opacity: 1;
+}
+

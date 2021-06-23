@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+		<style>
+			p {
+				position: fixed;
+				/* position: sticky; */
+				margin-top: 10px;
+				display: block;
+			}
+		</style>
+	</head>
+	<body>
+		<p class="para_1">this is paragraph 01</p>
+		<br />
+		<br />
+		<br />
+		<p class="para_2">this is paragraph 02</p>
+		<br />
+		<br />
+		<br />
+		<p class="para_3">this is paragraph 03</p>
+		<br />
+		<br />
+		<br />
+		<p id="para_4">this is paragraph 04</p>
+		<br />
+		<br />
+		<br />
+		<p class="para_5">this is paragraph 05</p>
+		<script src="jquery.js"></script>
+		<script>
+			// events is all action happened in a site by user
+			$(document).ready(function () {
+				$(".para_1").dblclick(function () {
+					$(this).hide();
+				});
+				$(".para_2").mouseenter(function () {
+					alert("Hei!! you entered the mouse");
+				});
+				$(".para_3").mouseleave(function () {
+					alert("Hei!! you leaved the mouse");
+				});
+				$("#para_4").hover(
+					function () {
+						$(this).css("color","green")
+					},
+					function () {
+						$(this).css("color","blue")
+					}
+				);
+			});
+		</script>
+	</body>
+</html>

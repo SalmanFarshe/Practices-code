@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<p id="id">this is id</p>
+		<p class="class">this is class</p>
+		<h2>this is tag</h2>
+		<p>ha ha ha</p>
+		<p>ha ha ha</p>
+		<p>ha ha ha</p>
+		<p>ha ha ha</p>
+		<p>ha ha ha</p>
+		<script>
+			document.querySelector("#id").innerHTML = "the text has changed";
+			document.querySelector(".class").innerHTML = "the text has changed";
+			document.querySelector("h2").innerHTML = "the text has changed";
+			document.querySelectorAll("p")[5].innerHTML = "this is for all";
+		</script>
+	</body>
+</html>

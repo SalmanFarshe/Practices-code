@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        var userResult = prompt("Enter your result :");
+
+            if( userResult == 5.00 ){
+                document.write( "You geted A+" )
+            }
+            else if( userResult < 5.00 && userResult >= 4.00 ){
+                document.write("You geted A")
+            }
+            else if( userResult <= 3.99 && userResult >= 3.5 ){
+                document.write("You geted A-")
+            }
+            else if( userResult <= 3.49 && userResult >= 3.00  ){
+                document.write("You geted B")
+            }
+            else if( userResult <= 2.99 && userResult >= 2.00  ){
+                document.write("You geted C")
+            }
+            else if(userResult <= 1.99 && userResult >= 1  ){
+                document.write("You geted D")
+            }
+            else{
+                document.write("Opss! you are not passed");
+            }
+    </script>
+</body>
+</html>

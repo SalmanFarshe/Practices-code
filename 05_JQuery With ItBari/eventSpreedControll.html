@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<p>this is a paragraph</p>
+		<script src="jquery.js"></script>
+		<script>
+			$(document).ready(function () {
+				$("p").click(function () {
+					$(this).hide(5000); //milisecond .... 1s = 1000 milisecond
+				});
+                // we can also use slow and fast perameater in place of tome of milisecond
+			});
+		</script>
+	</body>
+</html>

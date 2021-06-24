@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Document</title>
+	</head>
+	<body>
+		<script>
+			// var a;
+			try {
+				alert("i am tring alert");
+				alert(a); //this is ignored only for the catch block
+				alert("i am also tring alert");
+			} catch (errrrr) {
+				for (var i = 1; i < 20; i++) {
+					if (i == 5) {
+						console.log(errrrr.name); //this will show only the error name in the console
+					} else if (i == 10) {
+						console.log(errrrr.messege); //this will show only the error messege in the console
+					}
+					alert(i);
+				}
+				// alert(a);
+				// alert("i am cachinf alert");
+				console.log(errrrr); //this will show the error in the console
+			} finally {
+				//fynally block is the block which are shoing the all time fixed code and output
+				// alert(a);
+				alert("this is final code");
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,133 @@
+body {
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  color: #ddd;
+}
+
+#container {
+  width: 100%;
+}
+
+h1 {
+  color: green;
+}
+
+p {
+  color: #ddd;
+}
+
+h1 {
+  color: yellow;
+}
+
+p {
+  color: yellow;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+}
+nav a {
+  display: block;
+  padding: 6px 12px;
+  text-decoration: none;
+}
+nav a p p li div a {
+  color: yellow;
+}
+
+div {
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-align: center;
+  text-transform: lowercase;
+  text-overflow: hidden;
+}
+
+html li,
+body li,
+ul li,
+ol li {
+  margin: 0;
+  padding: 0;
+}
+
+.div {
+  padding: 10px;
+  margin: 10px;
+  font-size: 22px;
+}
+
+.danger {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  background-color: green;
+}
+
+.active {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+
+.text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+  padding: 0;
+  color: black;
+  padding: 10;
+  border-radius: 10px;
+  border-color: aqua;
+}
+
+.myArticle {
+  border: 1px solid blue;
+}
+
+.myNotes {
+  border: 2px solid red;
+}
+
+.myTips {
+  margin-left: 1px;
+}
+
+.go_to {
+  border: 1px solid red;
+}
+
+.myBox {
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+}
+
+.button-basic, .button-submit, .button-report {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report {
+  background-color: red;
+}
+
+.button-submit {
+  background-color: green;
+  color: white;
+}
+
+/*# sourceMappingURL=style.css.map */

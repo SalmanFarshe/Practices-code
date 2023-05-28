@@ -1,0 +1,174 @@
+// variable
+$myFont: Helvetica, sans-serif;
+$myColor: #ddd;
+$myFontSize: 25px;
+$myWidth: 100%;
+
+body {
+  font-family: $myFont;
+  font-size: $myFontSize;
+  color: $myColor;
+}
+
+#container {
+  width: $myWidth;
+}
+
+// variable scope
+h1 {
+  $myColor: green; //local scope
+  color: $myColor; //local scope
+}
+
+p {
+  color: $myColor; // global scope
+}
+
+// overwriting variable
+h1 {
+  $myColor: yellow !global; //making local as global
+  color: $myColor;
+}
+
+p {
+  color: $myColor;
+}
+
+// Sass Nested Rules
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  li {
+    display: inline-block;
+  }
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+  a {
+    p {
+      p {
+        li {
+          div {
+            a {
+              color: $myColor;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// Sass Nested Properties
+div {
+  font : {
+    family: Helvetica, sans-serif;
+    size: 18px;
+    weight: bold;
+  }
+
+  text : {
+    align: center;
+    transform: lowercase;
+    overflow: hidden;
+  }
+}
+
+// importing something
+@import "reset";
+@import "demo";
+
+// mixin and include
+@mixin important-text {
+  color: red;
+  font-size: 25px;
+  font-weight: bold;
+  border: 1px solid blue;
+}
+.danger {
+  @include important-text;
+  background-color: green;
+}
+.active {
+  @include important-text;
+}
+
+// mixin in a mixin
+@mixin link {
+  padding: 0;
+  color: black;
+}
+@mixin special-border {
+  padding: 10;
+  border-radius: 10px;
+  border-color: aqua;
+}
+@mixin special-text {
+  @include important-text;
+  @include link;
+  @include special-border;
+}
+.text {
+  @include special-text;
+}
+
+// Passing Variables to a Mixin
+@mixin bordered($color, $width) {
+  border: $width solid $color;
+}
+
+.myArticle {
+  @include bordered(blue, 1px);
+}
+
+.myNotes {
+  @include bordered(red, 2px);
+}
+
+@mixin bordered-left($w) {
+  margin-left: $w;
+}
+.myTips {
+  @include bordered-left($w: 1px);
+}
+@mixin bordered($color: red, $width: 1px) {
+  border: $width solid $color;
+}
+.go_to {
+  @include bordered;
+}
+
+@mixin transform($property) {
+  -webkit-transform: $property;
+  -ms-transform: $property;
+  transform: $property;
+}
+
+.myBox {
+  @include transform(rotate(20deg));
+}
+
+// Sass @extend and Inheritance
+.button-basic  {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.button-report  {
+  @extend .button-basic;
+  background-color: red;
+}
+
+.button-submit  {
+  @extend .button-basic;
+  background-color: green;
+  color: white;
+}
